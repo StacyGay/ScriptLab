@@ -1,0 +1,5 @@
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Utilities\bin\Debug\ScriptLab.Utilities.dll
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Utilities\bin\Debug\ScriptLab.Utilities.pdb
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Utilities\obj\Debug\ScriptLab.Utilities.csprojResolveAssemblyReference.cache
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Utilities\obj\Debug\ScriptLab.Utilities.dll
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Utilities\obj\Debug\ScriptLab.Utilities.pdb

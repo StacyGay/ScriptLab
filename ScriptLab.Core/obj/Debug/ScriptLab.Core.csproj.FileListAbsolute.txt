@@ -1,0 +1,5 @@
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Core\bin\ScriptLab.Core.dll.config
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Core\bin\ScriptLab.Core.dll
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Core\bin\ScriptLab.Core.pdb
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Core\obj\Debug\ScriptLab.Core.dll
+C:\Users\Stacy.Gay\Documents\Visual Studio 2013\Projects\ScriptLab\ScriptLab.Core\obj\Debug\ScriptLab.Core.pdb
