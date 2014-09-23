@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Linq;
+using System.Web;
 using System.Web.Optimization;
 
 namespace ScriptLab.Web.Site
@@ -27,7 +28,7 @@ namespace ScriptLab.Web.Site
 					  "~/Content/bootstrap.css",
 					  "~/Content/site.css"));
 
-			bundles.Add(new ScriptBundle("~/Scripts/app").IncludeDirectory("~/Scripts","*.js",true));
+			bundles.Add(new ScriptBundle("~/Scripts/app"){ Orderer = new MainScriptOrderer() }.IncludeDirectory("~/Scripts","*.js",true));
 
 			/*bundles.Add(new ScriptBundle("~/Scripts/app").Include(
 					  "~/Scripts/Core.js",
@@ -37,6 +38,19 @@ namespace ScriptLab.Web.Site
 			// Set EnableOptimizations to false for debugging. For more information,
 			// visit http://go.microsoft.com/fwlink/?LinkId=301862
 			BundleTable.EnableOptimizations = false;
+		}
+
+		class MainScriptOrderer : IBundleOrderer
+		{
+
+			public System.Collections.Generic.IEnumerable<BundleFile> OrderFiles(BundleContext context, System.Collections.Generic.IEnumerable<BundleFile> files)
+			{
+				var scriptList = files.ToList();
+				var mainScripts = scriptList.Where(f => f.IncludedVirtualPath.Contains("main")).ToList();
+				mainScripts.ForEach(s => scriptList.Remove(s));
+				scriptList.AddRange(mainScripts);
+				return scriptList;
+			}
 		}
 	}
 }
